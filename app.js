@@ -12,8 +12,7 @@ const template = todo => {
   todoList.innerHTML += html;
 };
 
-
-
+// add to-do item
 addForm.addEventListener('submit', e => {
   e.preventDefault();
   const todoItem = addForm.add.value.trim();
@@ -23,4 +22,12 @@ addForm.addEventListener('submit', e => {
     addForm.reset();
   }
 
+});
+
+
+// delete to-do item
+todoList.addEventListener('click', e => {
+  if(e.target.classList.contains('delete')){
+    e.target.parentElement.remove();
+  }
 });
