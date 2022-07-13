@@ -1,6 +1,7 @@
 const addForm = document.querySelector('form.add');
 const todoList = document.querySelector('.todos');
 
+// template html
 const template = todo => {
   const html = `
     <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -21,7 +22,6 @@ addForm.addEventListener('submit', e => {
     template(todoItem);
     addForm.reset();
   }
-
 });
 
 
