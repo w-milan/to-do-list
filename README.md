@@ -1,2 +1,3 @@
-# to-do-list
-Simple project "To-do list" with ES6
+# Preview
+
+https://moonlit-platypus-589b8b.netlify.app/
